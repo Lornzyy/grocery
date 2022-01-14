@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.header{
+    min-height: 100vh;
+    height: 500px;
+    width: 100%;
+    background-image: url(grocery-images/bgimage.jpg);
+    background-size: cover;
+    background-position: top;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6%;
+}
+.logo{
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 20px;
+}
+.reg-btn{
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.container{
+    
+    background: transparent;
+
+}
+.container h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    background: transparent;
+    padding: 0 7%;
+    margin: 10px;
+    transform: translateY(100%);
+    margin-left: 200px;
+    margin-right: 50px;
+}
+.search-bar{
+    background: #fff;
+    width: 40%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 40px;
+    transform: translate(0, 10%);
+}
+.search-bar form{
+    background: #fff;
+    border-radius: 20px;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+}
+.search-bar form div, .search-bar form div label{
+    background: #fff;
+    margin-top: 20px;
+
+}
+
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: #fff;
+    
+}
+.search-bar form button{
+    background: #ff536f;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transform: translate(100%, 90%);
+
+}
+.search-bar form button img {
+    width: 13px;
+    margin-top: 10px;
+}
+
+main{
+    background: powderblue;
+    height: 100vh;
+    width: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.deliveries{
+    width: 50%;   
+}
+.subtitle-del{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-top: -90px;
+}
+.del{
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 25%;
+}
+.deliveries .subtitle a{
+    text-decoration: none;
+    color: lightcoral;
+    font-size: 25px;
+    margin-left: 5%;
+}
+.ourLocations{
+    width: 50%;
+}
+.ourLocations p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 15px;
+}
+.ourLocations ul{
+    align-items: center;
+    display: inline-block;
+    list-style-type: none;
+    margin: auto 100px;
+}
+.ourLocations li{
+    font-size: 20px;
+    margin: 10px;
+}
+.ourStory{
+    padding: 0px 10px;
+    align-items: center;
+    
+}
+.subtitle{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20%;
+}
+.storysubtitle {
+    font-size: 28px;
+    font-weight: 800;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.ptag{
+    font-size: 18px;
+    font-weight: 300;
+    margin: -10px 20%;
+}
+.ptag a{
+    text-decoration: none;
+    color: #000;
+}
+.footer{
+        margin: 80px 0 20px;
+        text-align: center;
+}
+.subtitlesocials, .social-media{
+    margin: 10px;
+}
+.footer a{
+        text-decoration: none;
+        color: #999;
+        font-size: 22px;
+        margin: 0 10px;
+}
+.footer p{
+    font-size: 20px;
+    margin: 10px;
+    bottom: -10px;
+
+}
+.footer hr{
+    width: 60%;
+    height: 2px;
+    border: 1;
+    color: #000;
+    margin-left: 20%;
+}
+/*product section*/
+
+.cart{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+.pcart{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    transform: translate(0%, 40%);
+}
+/*-- contact section--*/
+
+.cont-container{
+    height: 100vh;
+    width: 100%;
+    background: powderblue;
+}
+.header-contact{
+    min-height: 100px;
+    height: 200px;
+    width: 100%;
+    background-image: url(grocery-images/bgimage.jpg);
+    background-size: cover;
+    background-position: top;
+
+}
+.cont-wrapper{
+    width: 100%;
+    height: 450px;
+    transform: translate(0, -30%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loc{
+    width: 30%;
+    height: 90px;
+    border-radius: 50px;
+}
+.call{
+    width: 30%;
+    height: 90px;
+    border-radius: 50px;
+}
+.email{
+    width: 30%;
+    height: 90px;
+    border-radius: 50px;
+}
+.cont-links{
+    margin-left: 20px;
+    padding: 10px;
+}
+.cont-links li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+.cont-links h3{
+    margin: 10px;
+}
+.form{
+    margin-top: -20px;
+    text-align: center;
+}
+.footer-cont{
+    text-align: center;
+    margin: 50px 0 20px;
+}
+.footer-cont a{
+        text-decoration: none;
+        color: #999;
+        font-size: 22px;
+        margin: 0 10px;
+        
+}
+.footer-cont p{
+    font-size: 20px;
+    margin: 10px;
+
+}
+.footer-cont hr{
+    width: 60%;
+    height: 2px;
+    border: 1;
+    color: #000;
+    margin-left: 20%;
+}
