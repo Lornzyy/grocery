@@ -166,6 +166,7 @@ main{
     font-size: 22px;
     font-weight: 600;
     margin-left: 20%;
+    
 }
 .storysubtitle {
     font-size: 28px;
@@ -185,7 +186,7 @@ main{
     color: #000;
 }
 .footer{
-        margin: 80px 0 20px;
+        margin: 80px  20px;
         text-align: center;
 }
 .subtitlesocials, .social-media{
@@ -211,7 +212,6 @@ main{
     margin-left: 20%;
 }
 /*product section*/
-
 .cart{
     width: 60px;
     height: 50px;
@@ -225,6 +225,105 @@ main{
     color: #fff;
     transform: translate(0%, 40%);
 }
+.prod-container{
+    width: 100%;
+    background: powderblue;
+}
+.prod-container h1{
+    margin-left: 30%;
+    padding-top: 20px;
+}
+.veggies{
+    width: 100%;
+    height: 60%;
+    column-count: 3;
+
+}
+.prod-subtitle{
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 40%;
+    color: #fff;
+}
+.veggies div img{
+    border-radius: 50%;
+    height: 150px;
+    width: 200px;
+    margin: 30px;
+}
+.veggies p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    transform: translate(20%, -450%);
+
+}
+.fruits{
+    column-count: 3;
+    width: 100%;
+}
+.fruits div img{
+    border-radius: 50%;
+    height: 150px;
+    width: 200px;
+    margin: 30px;
+}
+.fruits p{
+    color: #fff;
+    transform: translate(20%, -450%);
+}
+.delivery-bar{
+    width: 60%;
+    height: 100vh;
+    margin: 20px auto;
+    padding: 6px;
+    border-radius: 30px;
+    background: powderblue ;
+}
+.del-subtitle{
+    margin: 35px 50px;
+}
+.delivery-bar form{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+
+}
+.delivery-bar div label{
+    font-size: 15px;
+    font-weight: 200;
+    margin: 5px 40px;
+
+}
+.delivery-bar form input{
+    padding: 10px;
+    margin: 30px;
+    border-radius: 15px;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    width: 95%;
+    background: transparent;
+}
+textarea{
+    padding: 8px;
+    margin: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 200;
+    background: transparent;
+
+}
+.submit-btn{
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 8px;
+    margin-left: 600px;
+}
+
 /*-- contact section--*/
 
 .cont-container{
@@ -239,12 +338,11 @@ main{
     background-image: url(grocery-images/bgimage.jpg);
     background-size: cover;
     background-position: top;
-
 }
 .cont-wrapper{
     width: 100%;
     height: 450px;
-    transform: translate(0, -30%);
+    transform: translate(0, -25%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -280,27 +378,4 @@ main{
 .form{
     margin-top: -20px;
     text-align: center;
-}
-.footer-cont{
-    text-align: center;
-    margin: 50px 0 20px;
-}
-.footer-cont a{
-        text-decoration: none;
-        color: #999;
-        font-size: 22px;
-        margin: 0 10px;
-        
-}
-.footer-cont p{
-    font-size: 20px;
-    margin: 10px;
-
-}
-.footer-cont hr{
-    width: 60%;
-    height: 2px;
-    border: 1;
-    color: #000;
-    margin-left: 20%;
 }
