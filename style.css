@@ -160,7 +160,8 @@ nav{
     background: url(grocery-images/bg\ image.jfif);
     width: 80%;
     height: 180px;
-    margin: 10px 100px;
+    margin: 50px 100px;
+    padding: 6px;
     border-radius: 20px;
 }
 .cta-h2{
@@ -205,9 +206,9 @@ nav{
 }
 
 .ptag{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
-    margin: -10px 20%;
+    margin: 10px 10%;
 }
 .ptag a{
     text-decoration: none;
@@ -248,10 +249,14 @@ footer hr{
     margin: 10px;
 }
 .pcart{
+    
+    transform: translate(0%, 40%);
+}
+.pcart a{
+    text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
-    transform: translate(0%, 40%);
 }
 
 .prod-container h1{
