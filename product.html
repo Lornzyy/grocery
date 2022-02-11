@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="header">
-        <nav>
+        <nav id="navBar">
             <img src="grocery-images/logo.png" alt="logo" class="logo">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -23,12 +23,14 @@
             <img src="grocery-images/cart.jpg" alt="Cart" class="cart">
             <p class="pcart"> <a href="order.html">Add to Cart</a></p>
             </div>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+
         </nav>
         </div>
         <main>
             <div class="prod-container">
                 <h1> Find Fresh Affordable Groceries</h1> <br>
-                <h2 class="prod-subtitle">Vegetables</h2>
+                <h5 class="prod-subtitle">Vegetables</h5>
 
                 <div class="veggies">
 
@@ -373,6 +375,13 @@
                     <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
                 </div> <hr>
                 <p>© 2022 Lorna Mungai </p>
-            </footer>
+</footer>
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn(){
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
 </body>
 </html>

@@ -6,25 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh - Hub Grocery</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
     <header>
     <div class="header">
-        <nav>
+        <nav id="navBar">
             <img src="grocery-images/logo.png" alt="logo" class="logo">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>            
+            </ul>         
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+   
         </nav>
     </div>
 </header>
-<main>
+<main class="sign-main">
     <h2 class="subtitle">Fill in the form to Register.</h2>
+
+    <div class="signUp">
+    <form action="mailto:lonzmungai@gmail.com">
+        <label for="name"> First Name: </label>
+        <input type="text" placeholder="Fill in first Name" required=""> <br>
+        <label for="name"> Last Name: </label>
+        <input type="text" placeholder="Fill in last Name" required=""> <br>
+        <label for="password"> Password: </label>
+        <input type="password" placeholder="Fill in password" required=""> <br>
+        <label for="email"> Email Address: </label>
+        <input type="email" placeholder="Fill in email address" required="">
+        <button type="submit" class="signup-btn">Submit!</button>
+
+    </form> <br> <br>
+</div>
+    <div class="ord-form">
+        <form action="mailto:lonzmungai@gmail.com">
+            <h3>Fill in your email address to subscribe to our newsletter</h3> <br>
+
+            <div class="first-name">
+                <label for="name">Email Address:</label>
+                <input type="text" placeholder="Add email address" required="">
+                <a href="form.html" class="reg-btn">Submit </a>
+                
+
+            </div>
+            
 </main>
 <footer>
-
+    <div class="social-media">
+        <h2 class="subtitlesocials">Our Social media</h2>
+        <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div> <hr>
+    <p>© 2022 Lorna Mungai </p>
 </footer>
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn(){
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
 </body>
 </html>

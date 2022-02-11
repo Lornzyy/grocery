@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="header">
-        <nav>
+        <nav id="navBar">
             <img src="grocery-images/logo.png" alt="logo" class="logo">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -19,6 +19,8 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
                 <a href="form.html" class="reg-btn">Sign Up</a>
+                <i class="fas fa-bars" onclick="togglebtn()"></i>
+
         </nav>
     </div>
     <div class="wrapper">
@@ -38,29 +40,44 @@
         <h2 class="subtitle">Our Locations <br></h2>
         <ul>
             <li>Thika Road Mall <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9140476754574!2d36.887024314940675!3d-1.2198852359018741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fc955678a67%3A0x2c30e07746ac972a!2sTRM%20-%20Thika%20Road%20Mall!5e0!3m2!1sen!2ske!4v1644476955578!5m2!1sen!2ske" 
+                width="100" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <p>Opening hours: 8:30am - 4:00pm Weekdays</p>
             </li>
             <li>Sarit Centre Food Court <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8518221547033!2d36.79978901475388!3d-1.2611604990801324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176b69033ae5%3A0x527c0b54641e212!2sSarit%20Centre%2C%20Karuna%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1644476682755!5m2!1sen!2ske" 
+                width="100" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <p>Opening hours: 8:30am - 4:30pm Weekdays</p>
             </li>
             <li>Junction Mall <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7937392274757!2d36.75972691494123!3d-1.2985047360063282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6af785f0f3%3A0xc87e47e63ed244ed!2sThe%20Junction%20Mall!5e0!3m2!1sen!2ske!4v1644477157391!5m2!1sen!2ske"
+                 width="100" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <p>Opening hours: 8:30am - 4:00pm Weekdays</p>
             </li>
             <h3> Weekends: 9:00am - 2:30pm</h3>
         </ul>
     </div>
     </div>
-    <div class="cont-container">
+    <!--<div class="cont-container">
     <div class="cont-wrapper">
         <div class="loc">
             <span>
                 <img src="grocery-images/location.png" alt="loc" class="loc">
                 <ul class="cont-links">
                     <h3>Main Branch: </h3>
-                    <li>Thika Road Mall</li>
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe"
+                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                      src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Thika Road Mall&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                      </iframe><a href="https://kokagames.com/"></a></div><style>.mapouter{position:relative;text-align:left;width:200px;height:100px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe
+                     {width:200px!important;height:100px!important;}</style></div>
                     <h3>Sublets: </h3>
-                    <li>Sarit Centre Food Court</li><br>
-                    <li>Junction Mall</li>
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" 
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sarit Centre mall Food court&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://kokagames.com/">Koka Games</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe 
+                    {width:200px!important;height:100px!important;}</style></div>
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe"
+                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Junction Mall&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://kokagames.com/">Junction Mall</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe 
+                    {width:200px!important;height:100px!important;}</style></div>
                 </ul>
             </span>
         </div>
@@ -83,15 +100,16 @@
             </span>
         </div>
 
-    </div>
+    </div>-->
     <div class="form">
-        <form action="">
+        <form action="mailto:lonzmungai@gmail.com">
             <h3>Fill in your email address to subscribe to our newsletter</h3> <br>
 
             <div class="first-name">
                 <label for="name">Email Address:</label>
                 <input type="text" placeholder="Add email address" required="">
                 <a href="form.html" class="reg-btn">Submit </a>
+                
 
             </div>
             
@@ -109,6 +127,12 @@
         
 </footer>
 </div>
+<script>
+    var navBar = document.getElementById("navBar");
 
+    function togglebtn(){
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
 </body>
 </html>

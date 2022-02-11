@@ -12,7 +12,7 @@
 <body class="order">
     <header>
         <div class="header">
-            <nav>
+            <nav id="navBar">
                 <img src="grocery-images/logo.png" alt="logo" class="logo">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -20,6 +20,8 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                     <a href="form.html" class="reg-btn">Sign Up</a>
+                    <i class="fas fa-bars" onclick="togglebtn()"></i>
+
             </nav>
             </div>
             </header>
@@ -54,7 +56,7 @@
 
                     <div class="review">
                         <label for="loc">Review: </label> <br>
-                        <textarea name="message" id="message" cols="50" rows="5"
+                        <textarea name="message" id="message" cols="30" rows="5"
                         placeholder=" Leave us a message"></textarea>
                     </div> 
                     <div>
@@ -101,5 +103,12 @@
         <p>© 2022 Lorna Mungai </p>
         
 </footer>
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn(){
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
 </body>
 </html>
