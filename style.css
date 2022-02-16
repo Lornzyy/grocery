@@ -214,27 +214,23 @@ footer hr{
     cursor: pointer;
     margin: 10px;
 }
-.pcart{
+.cartclass p{
     
     transform: translate(0%, 40%);
 }
-.pcart a{
+.cartclass a{
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
 }
-
+.prod-container{
+    width: 100%;
+    height: 100%;
+}
 .prod-container h1{
     margin-left: 30%;
     padding-top: 20px;
-}
-.veggies{
-    width: 100%;
-    column-count: 3;
-    background: powderblue;
-    border-radius: 50px;
-
 }
 .prod-subtitle{
     font-size: 40px;
@@ -242,22 +238,27 @@ footer hr{
     color: lightcoral;
     margin-left: 20%;
 }
+.veggies{
+    column-count: 3;
+    width: 100%;
+    height: 50%;
+    background: powderblue;
+    border-radius: 50px;
+}
 .veggies div img{
     border-radius: 50%;
     height: 150px;
-    width: 200px;
+    width: 220px;
     margin: 30px;
 }
 .veggies p{
-    font-size: 20px;
-    font-weight: 600;
     color: #fff;
     transform: translate(20%);
-
 }
 .fruits{
     column-count: 3;
     width: 100%;
+    height: 50%;
     background: #ff536f;
     border-radius: 50px;
 }
@@ -270,14 +271,15 @@ footer hr{
 .fruits p{
     color: #fff;
     transform: translate(20%);
+    margin: 10px;
 }
 .order-btn{
     background: #000;
     color: #fff;
     border-radius: 20px;
     text-decoration: none;
-    padding: 10px;
-    transform: translate(-20%, -400%);
+    padding: 5px;
+    margin-left: 20%;
 }
 .delivery-bar{
     width: 60%;
@@ -345,7 +347,6 @@ textarea{
 .wrapper{
     width: 100%;
     height: 450px;
-    transform: translate(0, 5%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -358,7 +359,7 @@ textarea{
     font-size: 22px;
     font-weight: 600;
     margin-left: 20%;
-    margin-top: -210px;
+    margin-top: -120px;
 }
 .del{
     font-size: 18px;
@@ -393,6 +394,7 @@ span h3{
 }
 .ourLocations h2{
     margin-left: 10%;
+    margin-top: 160px;
 }
 .ourLocations ul{
     align-items: center;
@@ -405,7 +407,7 @@ span h3{
     margin: 10px;
 }
 .form{
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: center;
 }
 /*sign up part*/
@@ -418,12 +420,7 @@ span h3{
     margin-left: 20%;
     font-size: 35px;
 }
-/*.order{
 
-    background: lightcoral;
-    width:100%;
-    height: 100%;
-}*/
 .ord-form{
     margin-top: 2%;
     padding: 20px;
@@ -455,7 +452,7 @@ span h3{
     border-radius: 20px;
     text-decoration: none;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 700px){
 
    /*index section*/
  .logo{
@@ -550,6 +547,24 @@ span h3{
     }
 /*product section*/
         
+        .cartclass{
+           display: inline-block;
+        }
+        .cart{
+        width: 40px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+        .cartclass p{
+    
+        transform: translate(-70%, -150%);
+        }
+        .cartclass a{
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        }
         .veggies{
             width: 100vw;
             column-count: 2;
@@ -577,7 +592,6 @@ span h3{
         display: block;
         background: powderblue;
         margin-top: auto;
-        transform: translate(0, 0%);
         }
         .ourLocations{
             width: 100%;
@@ -610,7 +624,7 @@ span h3{
             font-size: 22px;
             font-weight: 600;
             margin-left: 15%;
-            margin-top: 15%;
+            margin-top: 5%;
         }
         .del{
             font-size: 18px;
@@ -619,7 +633,6 @@ span h3{
         }
         .deliveries .subtitle a{
             text-decoration: none;
-            color: lightcoral;
             font-size: 25px;
             margin-left: 5%;
         }
@@ -634,11 +647,11 @@ span h3{
             margin-left: 20%;
             margin-top: -7%;
         }
-
         .form{
-            margin-top: 20px;
+            margin-top: 2%;
             text-align: center;
         }
+
         /*register section*/
   
         .sign-main{
